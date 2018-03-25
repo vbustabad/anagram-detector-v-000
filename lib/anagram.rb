@@ -11,7 +11,7 @@ class Anagram
   def match(array_of_possible_anagrams)
     word_letters = @word.split(/\w/)
     possible_anagram = []
-    array_of_possible_anagrams.map do |word|
+    array_of_possible_anagrams.map do |possible_anagram|
       possible_anagram = word.split(/\w/)
     end
     if word_letters.sort == possible_anagram.sort
