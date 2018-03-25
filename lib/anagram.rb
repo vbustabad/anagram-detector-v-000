@@ -10,11 +10,7 @@ class Anagram
 
   def match(array_of_possible_anagrams)
     array_of_possible_anagrams.select do |word|
-      if word.split(/\w/).sort == @word.split(/\w/).sort
-        return word
-      else
-        []
-      end
+      word.split(/\w/).sort == @word.split(/\w/).sort
     end
   end
 
