@@ -9,8 +9,8 @@ class Anagram
   end
 
   def match(array_of_possible_anagrams)
-    array_of_possible_anagrams.select do |word|
-      word.split(/\w/).sort == @word.split(/\w/).sort
+    array_of_possible_anagrams.select do |possible_anagram|
+      possible_anagram.split(/\w/).sort == @word.split(/\w/).sort
     end
   end
 
